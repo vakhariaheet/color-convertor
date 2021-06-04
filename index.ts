@@ -5,9 +5,9 @@
  * @param alpha(optional) opacity
  * @returns rgba string
  * @example
- * ("#ffffff") => rgb(255,255,255);
- * ("#000",0.1) => rgba(0,0,0,.1)
- * ("#000C") => rgba(0,0,0,0.8)
+ * ('#ffffff') => rgb(255,255,255);
+ * ('#000',0.1) => rgba(0,0,0,.1)
+ * ('#000C') => rgba(0,0,0,0.8)
  */
 export const hexToRgb = (hex: string, alpha: number = 1) => {
   //* Remove # from hex string
@@ -104,8 +104,8 @@ export const rgbStrToHex = (rgba: string) => {
  * @param alpha (0-1) [optional]
  * @returns hsl string
  * @example
- *  (33,33,33) => "hsl(0,0%,13%)"
- *  (0,0,0,.5) =>"hsla(0,0%,0%,0.5)"
+ *  (33,33,33) => 'hsl(0,0%,13%)'
+ *  (0,0,0,.5) =>'hsla(0,0%,0%,0.5)'
  */
 export const rgbToHsl = (
   red: number,
@@ -148,8 +148,8 @@ export const rgbToHsl = (
  * @param rgba rgb/rgba string
  * @returns hsl string
  * @example
- * rgb(33,33,33) => "hsl(0,0%,13%)"
- * rgba(0,0,0,.5) =>"hsla(0,0%,0%,0.5)"
+ * rgb(33,33,33) => 'hsl(0,0%,13%)'
+ * rgba(0,0,0,.5) =>'hsla(0,0%,0%,0.5)'
  */
 export const rgbStrToHsl = (rgba: string) => {
   const rgbValues = rgba
@@ -234,7 +234,7 @@ export const hexToHsl = (hex: string): string => {
  * @returns hex string
  * @example
  * (50,'50%','50%') => #bfaa40
- * (150,.5,.5) => #4080bf
+ * (150,.5,.5) => #40bf80
  */
 export const hslToHex = (
   hue: number,
@@ -252,7 +252,7 @@ export const hslToHex = (
  * @returns rgb/rgba  string
  * @example
  * 'hsl(100,.5,.5)' => rgb(106,191,64)
- * 'hsl(200,50%,50%,.7)' => rgb(64,149,191,.7)
+ * 'hsl(200,50%,50%,.7)' => rgba(64,149,191,.7)
  */
 export const hslStrToRgb = (hsl: string): string => {
   const hslValues = hsl.split("(")[1].split(")")[0].split(",");
@@ -271,10 +271,11 @@ export const hslStrToRgb = (hsl: string): string => {
  * @returns hex string
  * @example
  * 'hsl(100,50%,50%)' => #6abf40
- * 'hsl(233,.6,.5) => #3345cc
+ * 'hsl(233,.6,.5)' => #5c6ad6
  *
  */
 export const hslStrToHex = (hsl: string): string => {
   const rgb = hslStrToRgb(hsl);
   return rgbStrToHex(rgb);
 };
+// rgb(92,106,214) rgb(106,191,64) #5c6ad6
