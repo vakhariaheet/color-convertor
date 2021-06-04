@@ -18,6 +18,8 @@
     "url": "git+https://github.com/vakhariaheet/color-convertor.git"
   },
   "keywords": [
+    "color-convertor",
+    "color",
     "rgb",
     "rgb2hex",
     "hex",
