@@ -1,21 +1,21 @@
-# Color Coverter
+# Color Converter
 Tiny js library for color conversion
 ## Installation
 ```bash
-npm install color-covertor --save
+npm install color-convertor --save
 ```
 ```bash
-yarn add color-covertor
+yarn add color-convertor
 ```
 ### Import
 
 ```javascript
-import color from 'color-covertor';
+import color from 'color-convertor';
 ```
 
 ```JavaScript
 // CommonJS
-const color = require('color-covertor');
+const color = require('color-convertor');
 ```
 ### Usage
 ```JavaScript
